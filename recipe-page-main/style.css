@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CODE STARTS HERE */
+
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+/*  */
+body {
+    background-color: rgb(241, 204, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Outfit;
+    color: rgb(66, 66, 66);
+    line-height: 2em;
+}
+
+.card {
+    background-color: white;
+    width: 50%;
+    margin: 150px 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.card section {
+    margin: 20px 7%;
+}
+
+.card section:first-of-type {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: YoungSerif;
+    /* font-weight: 700; */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.header p {
+    font-family: Outfit;
+    font-size: 1.2em;
+    color: rgb(71, 71, 71);
+    line-height: 1.3em;
+}
+
+.card img {
+    margin: 5% 7%;
+    width: 86%;
+    border-radius: 15px;
+}
+
+h3 {
+    font-family: Outfit;
+    font-weight: 700;
+    color: rgb(105, 42, 105);
+    font-size: 1.5em;
+}
+
+li {
+    padding: 5px;
+    line-height: 1.5em;
+}
+
+.prep {
+    background-color: rgb(255, 249, 254);
+    width: 86%;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+b {
+    font-weight: 700;
+}
+
+h2 {
+    color: rgb(97, 39, 39);
+    font-size: 2em;
+    font-family: YoungSerif;
+}
+
+.ingredients {
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(87, 87, 87, 0.5);
+    width: 86%;
+}
+
+.instructions {
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(87, 87, 87, 0.5);
+    width: 86%;
+}
+
+.nutrition {
+    box-sizing: border-box;
+}
+
+.nutrition p {
+    padding: 20px 0;
+}
+
+.nutrition table {
+    display: flex;
+    flex-direction: column;
+}
+
+.nutrition tr {
+    padding: 20px;
+    border-bottom: 1px solid rgb(87, 87, 87, 0.25);
+}
+
+.nutrition tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition td {
+    padding: 10px 150px;
+}
