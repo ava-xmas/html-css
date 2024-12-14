@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CODE STARTS HERE */
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(229, 6%, 66%);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+header {
+    font-size: 2.5em;
+    font-weight: 200;
+    text-align: center;
+    padding: 100px 0 25px 0;
+    line-height: 1.5em;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+p {
+    padding: 0 35%;
+    padding-bottom: 40px;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+header,
+div h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+
+div {
+    position: absolute;
+    box-sizing: border-box;
+    width: 25%;
+    height: fit-content;
+    box-shadow: 0 10px 8px 3px hsl(229, 6%, 66%, 0.3);
+    border-radius: 10px;
+    padding: 40px 100px 40px 30px;
+    line-height: 1.8em;
+    margin: 30px 0;
+}
+
+div h3 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.4em;
+    padding-bottom: 15px;
+}
+
+div svg {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.card1 {
+    /* left: 37.5%; */
+    margin: 20px 37.5%;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card2 {
+    margin: 20px 10%;
+    top: 450px;
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card3 {
+    margin: 20px 65%;
+    top: 450px;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card4 {
+    margin: 300px 37.5% 0 37.5%;
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+@media (max-width: 1144px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    p {
+        width: 60%;
+        padding: 0 20% 25px;
+    }
+
+    div {
+        position: relative;
+        margin: 0 15%;
+        width: 70%;
+    }
+
+    .card1 {
+        margin: 20px 15%;
+    }
+
+    .card2 {
+        margin: 20px 15%;
+        top: 0;
+    }
+
+    .card3 {
+        margin: 20px 15%;
+        top: 0;
+    }
+
+    .card4 {
+        margin: 20px 15%;
+    }
+}
