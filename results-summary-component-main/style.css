@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CODE STARTS HERE */
+
+body {
+    background-color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card {
+    box-shadow: 1.5em 1.5em 3em hsl(221, 100%, 96%);
+    display: flex;
+    flex-direction: row;
+    margin: 150px auto;
+    width: fit-content;
+}
+
+.card>section {
+    width: 400px;
+    /* height: fit-content; */
+    /* padding: 40px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.main .circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.aside h2 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 10px 30px 20px;
+}
+
+.aside>div {
+    width: 80%;
+    padding: 20px 10%;
+    font-weight: 700;
+    margin: 10px 17px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.aside svg {
+    margin-right: 10px;
+}
+
+.ability {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aside .score {
+    padding-left: 30%;
+    color: #00000066;
+}
+
+.score b {
+    color: #000000aa;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%, 0.8);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%, 0.8);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%, 0.8);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%, 0.8);
+}
+
+#button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 90px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    /* transition: background 0.2s linear; */
+}
+
+#button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.main h2 {
+    font-size: 1.5em;
+    opacity: 0.75;
+    font-weight: 600;
+    padding: 50px 0;
+}
+
+.main h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.main p {
+    opacity: 0.75;
+    font-weight: 600;
+    padding: 10px 75px 50px;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+#score76 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+#score100 {
+    font-size: 1em;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.main>* {
+    padding: 20px;
+}
+
+
+
+@media (max-width: 876px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside>* {
+        margin: 10px auto;
+    }
+}
