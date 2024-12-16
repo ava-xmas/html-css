@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CODE STARTS HERE */
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    font-size: 18px;
+}
+
+.main {
+    width: 75%;
+    margin: 100px auto;
+    height: fit-content;
+    display: grid;
+    grid-template-areas:
+        "part1 part1 part2 part2 part2"
+        "part3 part3 part3 part3 part3";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.part1 {
+    grid-area: part1;
+    /* padding: 20px 50px; */
+    min-width: 500px;
+}
+
+.part1 h1 {
+    padding: 20px 50px;
+    font-size: 3.8em;
+    line-height: 0.9em;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.part1 p {
+    padding: 20px 0 20px 50px;
+    font-size: 1.15em;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: hsl(303, 10%, 53%);
+}
+
+.part2 {
+    grid-area: part2;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 15px;
+    min-width: 500px;
+}
+
+.part2 div {
+    background-color: hsl(300, 24%, 96%);
+    box-sizing: border-box;
+    /* padding: 10px 0 10px; */
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    /* width: fit-content; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.part2 p {
+    font-weight: 700;
+    display: inline;
+    padding-left: 40px;
+    color: hsl(300, 43%, 22%);
+}
+
+.part2 svg {
+    padding: 3px;
+    /* padding-bottom: 0; */
+}
+
+.part2 .card1 {
+    grid-area: 3/3/5/14;
+}
+
+.part2 .card2 {
+    grid-area: 5/4/7/15;
+}
+
+.part2 .card3 {
+    grid-area: 7/5/9/16;
+}
+
+.part3 {
+    padding: 20px 50px;
+    grid-area: part3;
+    display: grid;
+    grid-template-columns: repeat(33, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.part3>* {
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    padding: 40px;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.6em;
+    border-radius: 10px;
+}
+
+.part3 .colton {
+    grid-area: 2/1/10/11;
+}
+
+.part3 .irene {
+    grid-area: 3/12/11/22;
+}
+
+.part3 .anne {
+    grid-area: 4/23/12/33;
+}
+
+.part3 .image {
+    border-radius: 50%;
+}
+
+.part3 img {
+    border-radius: 50%;
+    width: 2.8em;
+    height: 2.8em;
+}
+
+.part3 .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.part3 .top .info .name {
+    padding: 0 30px;
+    font-weight: 700;
+}
+
+.part3 .top .info .verified {
+    color: hsl(333, 80%, 67%);
+}
+
+.part3 .top .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .body {
+        background-image: url(./images/bg-pattern-bottom-mobile.svg), url(./images/bg-pattern-top-mobile.svg);
+        background-position: top center, bottom center;
+        background-repeat: no-repeat;
+        background-size: cover, cover;
+    }
+
+    .main {
+        width: 80%;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .part2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part2 .card1,
+    .part2 .card2,
+    .part2 .card3 {
+        padding: 5px 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .part3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 35px 0 20px;
+        /* padding-left: 30px; */
+        width: 100%;
+    }
+
+    .anne,
+    .colton,
+    .irene {
+        margin: 0 auto 20px;
+    }
+
+}
